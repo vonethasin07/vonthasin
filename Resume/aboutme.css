@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background-color: #2c2853;
+    
+}
+header {
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 99;
+}
+.trapbar {
+    background-color: #231f52;
+    box-shadow: 10px 0px 10px 2px black;
+    width: 100%;
+}
+.menu-bar {
+    display: flex;
+    justify-content: space-between;
+}
+.menu-bar li  {
+    list-style: none;
+}
+.trapbar .con-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    width: 75%;
+    margin: auto;
+}
+.trapbar .con-bar a {
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+
+}
+.trapbar .con-bar .menu-bar .item-menu {
+
+    color: white;
+    text-decoration: none;
+    margin-left: 2rem;
+    font-size: 25px;
+    cursor: pointer;
+   
+}
+.trapbar .con-bar .menu-bar .item-menu {
+
+    position: relative;
+	font-size: 1.5em;
+	color: #fff;
+	text-decoration: none;
+}
+.trapbar .con-bar .menu-bar .item-menu::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -6px;
+	width: 100%;
+	height: 3px;
+	/*background: rgb(121, 121, 121);*/
+    background-image: linear-gradient(225deg, rgba(25, 136, 247, 1) 0%, rgba(247, 25, 136, 1) 57%);
+	border-radius: 5px;
+	transform-origin: right;
+	transform: scaleX(0);
+	transition: transform .5s;
+}
+.trapbar .con-bar .menu-bar .item-menu:hover::after {
+	transform-origin: right;
+	transform: scaleX(1);
+}
+.con-about{
+    /*border: red 1px solid;*/
+    width: 1000px;
+    margin: auto;
+}
+
+.stuednt{
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+}
+.myskill{
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+P{
+    color: #fff;
+}
+.contianer{
+    margin: auto;
+    border-radius: 2%;
+    box-shadow: 1px 0px 100px 2px #0e0c20;
+    text-align: center;
+    width: 500px;
+    margin-top: 50px;
+}
+.title-skill{
+    font-size: 1rem;
+    text-align: left;
+    color: #fff;
+    font-weight: bold;
+}
+footer {
+    color: #fff;
+    background-color: #231f52;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    margin-top: 25px;
+    bottom: 0;
+    box-shadow: 10px 0px 10px 2px black;
+}
+@media only screen and (max-width: 600px) {
+    .trapbar .con-bar a {
+        font-size: 15px;
+        cursor: pointer;
+    }
+    .trapbar {
+        background-color: #231f52;
+
+    }
+    .trapbar .con-bar {
+        font-size: 10px;
+    }
+    .contianer {
+    margin: auto;
+    text-align: center;
+    width: 300px;
+    }
+    .w3-container{
+        margin-top: 15px;
+    }
+    
+  }
+  @media only screen and (max-width: 414px) {
+    .trapbar .con-bar a {
+        font-size: 15px;
+        cursor: pointer;
+    }
+    .trapbar {
+        background-color: #231f52;
+
+    }
+    .trapbar .con-bar {
+        font-size: 10px;
+    }
+    .contianer {
+    margin: auto;
+    text-align: center;
+    width: 300px;
+    }
+    .w3-container{
+        margin-top: 15px;
+    }
+    footer{
+        position: fixed;
+        bottom: 0;
+    }
+  }
+  @media only screen and (max-width: 1250px) {
+    .trapbar .con-bar a {
+        font-size: 15px;
+        cursor: pointer;
+    }
+    .trapbar {
+        background-color: #231f52;
+
+    }
+    .trapbar .con-bar {
+        font-size: 10px;
+    }
+    .contianer {
+    margin: auto;
+    text-align: center;
+    width: 300px;
+    }
+    .w3-container{
+        margin-top: 15px;
+    }
+    footer{
+        margin-top: 70px;
+        position: relative;
+    }
+    
+  }
